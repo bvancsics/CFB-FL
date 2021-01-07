@@ -2,9 +2,9 @@
 
 
 ## The docker image contains:
- - Defects4J bug dataset
- - Java instrumenter
- - measurements framework
+ - Defects4J bug dataset [(available)](https://github.com/Frenkymd/defects4j/tree/chain)
+ - Java instrumenter [(available)](https://github.com/sed-szeged/java-instrumenter/tree/master)
+ - measurements framework [(available)](https://github.com/bvancsics/frequencySBFL/tree/main)
 
 ## Steps:
 
@@ -64,10 +64,13 @@
 
 ## Result
 
+Result of python scipt:
 | bugID | Barinel| Barinel-C | Jaccard | Jaccard-C | ... |
 |--|--|--|--|--|--|
-| [ID] | [rank] | [rank] | [rank] | [rank] | ... |
+| [ID] | [rank] | [rank] | [rank] | [rank] | [rank] |
   
-Rank(name):
- - without `-C`: the rank based on "original" (hit)
- - with `-C` : the rank based on call frequency
+  - Rank(name):
+    - without `-C`: the rank based on "original" (hit)
+    - with `-C` : the rank based on call frequency
+
+The `result.csv` contains the average ranks for all bugs.
